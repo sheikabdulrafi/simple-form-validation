@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <section>
+      <div class="formHolder">
+        <h1>Sign Up / Register</h1>
+        <form action="">
+          <input
+            type="text"
+            name=""
+            id="firstName"
+            required
+            placeholder="Enter your First Name"
+          />
+          <input
+            type="text"
+            name=""
+            id="lastName"
+            required
+            placeholder="Enter your Last Name"
+          />
+          <input
+            type="number"
+            name=""
+            id="phoneNumber"
+            required
+            placeholder="Mobile Number"
+          />
+          <input
+            type="email"
+            name=""
+            id="emailId"
+            placeholder="Enter your Email Id"
+            required
+          />
+          <input
+            type="password"
+            name=""
+            id="pass"
+            required
+            placeholder="Enter Password"
+            onkeyup="return validation()"
+          />
+          <input
+            type="password"
+            id="pass2"
+            placeholder="Confirm Password"
+            required
+            onkeyup="return isMatching()"
+          />
+          <input type="submit" value="Sign Up" id="submit" />
+        </form>
+        <div class="warnings">
+          <span id="upper">Atleast 1 Uppercase</span>
+          <span id="lower">Atleast 1 Lowercase</span>
+          <span id="num">Atleast 1 Number</span>
+          <span id="sp">Atleast 1 Sp Char</span>
+          <span id="minimum">Minimun 6 Chars</span>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="./script.js"></script>
+</html>
